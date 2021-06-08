@@ -33,7 +33,13 @@ const rules = [
     test: /\.css$/,
     use: [
       'style-loader',
-      MiniCssExtractPlugin.loader,
+      {
+        loader: MiniCssExtractPlugin.loader,
+        options: {
+          esModule: false
+        }
+      },
+
       'css-loader',
     ],
   },

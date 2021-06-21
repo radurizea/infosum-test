@@ -2,24 +2,33 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.dataset h1 {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dataset-stats,
+.key-stats {
+  padding: 0 1rem;
+}
+
+.dataset-toggle-stats {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 0 0.5rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.dataset-toggle-stats p {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0 1rem 0 0;
 }
 
+.dataset-toggle-stats p.active {
+  font-weight: bold;
+}
+
+.dataset-keys,
+.dataset-categories {
+  border: 1px solid;
+  padding: 1rem;
+}
